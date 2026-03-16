@@ -16,3 +16,12 @@ jobs:
           echo "Usuario actual:" && whoami
           echo "Versión de Node.js instalada:" && node -v
           echo "Espacio en disco:" && df -h | grep '^/dev/'
+      
+      - name: 3. Saludar
+        run: |
+          echo "Hola a todos"
+      
+      - name: 4. Despedirnos
+        run: |
+          echo "Chau a todos"
+          
