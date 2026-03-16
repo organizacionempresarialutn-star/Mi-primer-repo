@@ -1,0 +1,18 @@
+name: Auditoria de Maquina UTN
+
+on: [push] # Se activa cada vez que subís algo
+
+jobs:
+  investigacion:
+    runs-on: ubuntu-latest # Le pedimos un Linux a GitHub
+    steps:
+      - name: 1. Bajando el codigo
+        uses: actions/checkout@v4
+
+      - name: 2. Preguntandole cosas al servidor
+        run: |
+          echo "Buscando info del servidor de GitHub..."
+          echo "Sistema Operativo:" && uname -a
+          echo "Usuario actual:" && whoami
+          echo "Versión de Node.js instalada:" && node -v
+          echo "Espacio en disco:" && df -h | grep '^/dev/'
