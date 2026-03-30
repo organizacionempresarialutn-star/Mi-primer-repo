@@ -1,4 +1,8 @@
 buenas!
 Agregamos un cambio en la segunda linea
 agregamos una linea desde el main
+<<<<<<< HEAD
 usuario 2 linea 4
+=======
+usuario1 linea 4
+>>>>>>> e2b683e62fe1fca7c9570013a11af77521a63bc4
